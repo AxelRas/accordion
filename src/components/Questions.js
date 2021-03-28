@@ -14,6 +14,12 @@ function showAnswer(id, answer) {
         $("#button-"+ id).empty();
         $("#button-"+ id).text("+");
     }
+
+    if($(window).height() > $(".App").height()) {
+        $("html").css({"align-items": "center"});
+      } else {
+        $("html").css({"align-items": "flex-start"});
+      }
 }
 
 export default class Questions extends Component {

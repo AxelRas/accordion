@@ -6,17 +6,15 @@ html {
   font-family: 'Lato', sans-serif;
   height: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 .App {
-  align-self: center;
   display:flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  top: auto;
+  /* border: 2px solid black; */
 }
 
 .container {
@@ -26,10 +24,9 @@ html {
   align-items: flex-start;
   background-color: rgb(143, 173, 163);
   padding: 20px;
-  margin: 20px;
+  margin: 40px;
   border-radius: 5px;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.6);
-  max-width: 900px;
 }
 
 .title h1 {
@@ -79,10 +76,6 @@ html {
   .container{
     flex-direction: column;
   }
-
-  .App {
-    top: 40px;
-  }
   
   @media (max-width: 640px) {
     .question-container {
@@ -95,11 +88,6 @@ html {
 
     .title h1{
       font-size: 1.6em;
-    }
-
-    .App {
-      top: 120px;
-    }
-    
+    }    
   }
 }
